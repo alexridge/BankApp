@@ -1,0 +1,13 @@
+To install the code clone this repo onto your machine.
+---------
+git clone 
+--------- 
+Then once installed, run npm install to download required json depencies.
+---------
+npm install 
+npm run build 
+---------
+Run jest to ensure everything has been installed sucessfully.
+---------
+jest 
+---------
