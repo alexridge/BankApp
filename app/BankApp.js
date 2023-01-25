@@ -6,7 +6,7 @@ class BankApp {
     const transactions = ["Date || Withdrawls || Deposits || Balance "]; 
     this.transactions = transactions
     this.statements = document.querySelector('#statements');
-
+    document.addEventListener('DOMContentLoaded', function () {
     this.buttonD = document.querySelector('#submit-d').addEventListener('click', () =>{
       this.depo = document.querySelector('#d-input').value;
       this.deposit(this.depo * 1);
@@ -15,6 +15,7 @@ class BankApp {
       this.withd = document.querySelector('#w-input').value;
       this.withdraw(this.withd * 1);
     });
+  });
 };
   statement () {
    return(this.transactions);
